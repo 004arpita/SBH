@@ -1,0 +1,142 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+/* General Styling (Apply to both management.css and index.css) */
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 10px 50px; /* Adjusted padding to match index.css */
+    background: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    color: rgb(149, 86, 148);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(149, 86, 148);
+}
+
+.logo span {
+    color: rgb(149, 86, 148);
+    font-weight: bold;
+}
+
+nav ul { 
+    display: flex; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 10px;
+}
+
+nav ul li a { /* Consistent selector for navigation links */
+    text-decoration: none;
+    color: rgb(149, 86, 148);
+    font-weight: bold;
+    line-height: 40px; /* Match button line-height */
+    height: 40px; /* Match button height */
+    display: inline-block; /* Ensure height and line-height work */
+    font-size: 16px; /* Explicit font size */
+    font-family: Arial, sans-serif; /* Explicit font family */
+}
+
+.contact {
+    color: rgb(149, 86, 148);
+    font-weight: bold;
+}
+
+.login, .dashboard {
+    font-weight: bold;
+}
+
+.cta-button {
+    background: #3f1a49;
+    color: white;
+    padding: 0 20px; /* Remove vertical padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 40px; /* Match nav link line-height */
+    height: 40px; /* Match nav link height */
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center content vertically */
+    font-family: Arial, sans-serif; /* Explicit font family */
+}
+
+.cta-button:hover {
+    background: #2f0f38;
+}
+
+
+/* ... (rest of your CSS remains the same) ... */
+.explore-btn {
+    background: linear-gradient(to right, #ae4dc1, #4f3453); /* Change to a contrasting color (e.g., dark red) */
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: left;
+    margin-top: 10px;
+}
+
+.explore-btn:hover {
+    background: linear-gradient(to right, #ae4dc1, #4f3453);/* Slightly darker shade on hover */
+}
+
+/* ... (rest of your header CSS remains the same) ... */
+
+.career-options {
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd; /* Add border */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slightly reduced shadow */
+    margin: 20px auto; /* Center and add margin */
+    max-width: 1000px; /* Limit width */
+    padding: 20px; /* Add padding inside the card */
+}
+
+.card-image img {
+    width: 100px; /* Adjust image size as needed */
+    height: 100px; /* Adjust image size as needed */
+    object-fit: cover;
+    border-radius: 5px; /* Add border radius to images */
+    margin-right: 20px; /* Add space between image and text */
+}
+
+.card {
+    display: flex; /* Use flexbox for image and text alignment */
+    align-items: center; /* Align items vertically in the center */
+}
+
+/* ... (rest of your CSS remains the same) ... */
+
+.card-details {
+    flex: 1; /* Allow details to take remaining space */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack details vertically */
+    justify-content: space-between; /* Space details and button */
+    align-items: flex-start; /* Align details to the start */
+}
+
+.card-details a.explore-btn {
+    align-self: flex-end; /* Align button to the end (right) */
+}
+
+/* ... (rest of your CSS remains the same) ... */
+
