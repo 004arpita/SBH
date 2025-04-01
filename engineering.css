@@ -3,14 +3,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: rgb(181, 212, 229);
 }
 
 /* Header Styling */
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     padding: 15px 50px;
     background: white;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
@@ -28,8 +28,8 @@ header {
     font-weight: bold;
 }
 
-nav ul { 
-    display: flex; 
+nav ul {
+    display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -84,23 +84,23 @@ nav ul li a {
 }
 
 .card {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: white; /* White background for all cards */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
     max-width: 1000px;
     padding: 20px;
     display: flex;
     align-items: center;
+    color: rgb(17, 17, 17); /* Dark text for better visibility */
 }
 
 .card-image img {
-    width: 100px;
-    height: 100px;
+    width: 180px;
+    height: 180px;
     object-fit: cover;
-    border-radius: 5px;
-    margin-right: 20px;
+    border-radius: 10px;
+    margin-right: 30px;
 }
 
 .card-details {
@@ -113,20 +113,34 @@ nav ul li a {
 
 .card-details h2 {
     margin-top: 0;
+    font-size: 1.8em;
+    color: rgb(16, 16, 16); /* Dark text for headings */
+}
+
+.card-details p {
+    color: #070707; /* Dark text for paragraphs */
+    margin-bottom: 15px;
+    font-size: 1.1em;
 }
 
 .card-details a.explore-btn {
-    background: linear-gradient(to right, #ae4dc1, #4f3453);
-    color: white;
-    padding: 8px 15px;
+    background: linear-gradient(to right, #3c0952, #312049); /* Gradient button background */
+    color: #f1ebf2; /* Light text on gradient */
+    padding: 12px 25px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
     align-self: flex-end;
+    font-weight: bold;
+    transition: background 0.3s ease; /* Smooth transition */
 }
 
 .card-details a.explore-btn:hover {
-    background: linear-gradient(to right, #ae4dc1, #4f3453);
+    background: #3d0a69; /* Slightly darker gradient on hover */
+    transition: background 0.3s ease; /* Smooth transition on hover */
 }
-.engineering-button {
-    text-decoration: none;
-  }
+
+/* Add active state for click effect */
+.card-details a.explore-btn:active {
+    background: #300742; /* Even darker gradient on click */
+    transition: background 0s ease; /* No transition on click */
+}
