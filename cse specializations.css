@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(181, 212, 229);
+    margin: 0;
+    padding: 0;
+}
+
+.career-header {
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: inline-block;
+    padding: 10px;
+    background-color: #3d0a69;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #222;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: left;
+}
+
+ul li {
+    font-size: 18px;
+    margin: 5px 0;
+    position: relative;
+    padding-left: 25px;
+}
+
+/* Square bullets for main categories */
+ul li::before {
+    content: "■";
+    color: #3d0a69;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+/* Disk bullets for subpoints */
+ul li ul {
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+ul li ul li::before {
+    content: "●";
+    color: #333;
+    font-size: 16px;
+    left: 0;
+    position: absolute;
+}
+
+/* Add career-box styles */
+.career-box {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 1000px;
+    text-align: center; /* Align text within the box to the left */
+}
+
+/* Adjust career-content for box */
+.career-content {
+    text-align: left;
+    margin-bottom: 20px;
+}
